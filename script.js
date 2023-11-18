@@ -94,6 +94,9 @@ p2Btn.addEventListener(`click`, () => {
 })
 cross.addEventListener(`click`,() => {
     down.style.animationName = `revers`
+    setTimeout(() => {
+        nav.style.display = `flex`
+    }, 1000)
 })
 rightSection.addEventListener(`click`, () => {
     leftSection.style.width = `10%`
