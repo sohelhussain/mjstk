@@ -1,0 +1,457 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+font-family: gilroy;
+}
+html,body{
+height: 100%;
+width: 100%;
+cursor: url(icons/icons8-cursor-67.png),auto;
+}
+#cursor{
+    height: 67px;
+}
+#main{
+width: 100%;
+}
+#container-first{
+height: 100vh;
+width: 100%;
+position: relative;
+}
+.rapper-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+nav{
+    width: 100%;
+    height: 10%;
+    position: sticky;
+    padding: 0px 30px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+}
+nav .left i{
+    font-size: 30px;
+}
+nav .center{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 100px;
+}
+nav .center i{
+    font-size: 30px;
+}
+nav .center h2{
+    text-transform: uppercase;
+    margin-bottom: -8px;
+    font-weight: 600;
+}
+nav .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+nav .right i{
+    font-size: 20px;
+}
+nav .right .user-id{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?auto=format&fit=crop&q=80&w=3270&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+.top-section{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    transition: all ease-in-out .5s;
+}
+.left-section{
+    background-color: #0092cc85;
+}
+.ri-arrow-left-s-line{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 40px;
+    transform: translate(0, -50%);
+}
+.ri-arrow-right-s-line{
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    transform: translate(0, -50%);
+}
+.hedtext{
+
+}
+.left-section .lef-left{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 80px;
+    z-index: 1;
+}
+.left-section .lef-left h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+.left-section .lef-left h1{
+    font-size: 80px;
+    font-family: ogg;
+    line-height: 1;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    mix-blend-mode: difference;
+    /* color: black; */
+}
+.lef-left .lef-text .clickpara{
+    display: none;
+}
+.lef-left .lef-text .money{
+    display: none;
+}
+.left-lef-price{
+    margin-top: 40px;
+    display: flex;
+}
+.left-lef-price button{
+    padding: 7px 55px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    font-size: 17px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: url(icons/icons8-cursor-67.png),auto;
+}
+.lef-footer{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    scale: 0;
+}
+.lef-footer .fou-user{
+    display: flex;
+    align-items: center;
+}
+.lef-footer .round-user{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: -10px;
+    box-shadow: 0 0 3px black;
+}
+.lef-footer .round-user:nth-child(1){
+    background-image: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=3270&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+.lef-footer .round-user:nth-child(2){
+    background-image: url(https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&fit=crop&q=80&w=3280&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+.lef-footer .round-user:nth-child(3){
+    background-image: url(https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?auto=format&fit=crop&q=80&w=3164&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+.lef-footer .line{
+    width: 100px;
+    height: 1px;
+    background-color: rgb(228, 226, 226);
+    margin-left: 30px;
+}
+.lef-footer p{
+    margin-left: 20px;
+    font-size: 12px;
+}
+.lef-footer i{
+    margin-left: 20px;
+    font-size: 18px;
+}
+.left-section .lef-right{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-size: 93%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.left-section .lef-right .lef-right-overlay{
+    width: 100%;
+    height: 100%;
+}
+.left-section .lef-right .left-img{
+    padding-top: 10%;
+    width: 100%;
+    height: 90%;
+}
+.left-section .lef-right .left-img img{
+    width: 100%;
+}
+.right-section{
+    background-color: rgba(216, 96, 16, 0.554);
+    left: 50%;
+}
+.right-section .lef-left{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 80px;
+}
+.right-footer{
+    margin-top: 20px;
+}
+.right-section .lef-left h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+.right-section .lef-left h1{
+    font-size: 80px;
+    font-family: ogg;
+    line-height: 1;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.right-section .lef-right{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-size: 93%;
+    background-position: center;
+}
+.right-section .lef-right .lef-right-overlay{
+    width: 100%;
+    height: 100%;
+}
+.right-section .lef-right .left-img{
+    padding-top: 10%;
+    width: 100%;
+    height: 90%;
+}
+.right-img{
+}
+.right-section .lef-right .left-img img{
+    width: 100%;
+}
+.down-section{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 100vh;
+    /* animation-name: lide; */
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    animation-iteration-count: inherit;
+    animation-fill-mode: forwards;
+    z-index: 98;
+    background-color: white;
+}
+.down-section .down-nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 25px;
+}
+.down-section .down-nav .left-logo{
+    text-transform: uppercase;
+    font-size: 23px;
+}
+.down-section .down-nav .right-cross{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.down-section .hed-down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.down-section .hed-down h1{
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.down-section .box{
+    width: 99%;
+    height: 60%;
+    /* background-color: rgb(125, 249, 249); */
+    /* margin: auto; */
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 10px;
+    padding: 6px;
+}
+.down-section .box .grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px 180px 180px 180px;
+    text-align: center;
+}
+.down-section .box .grid .elem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(0, 255, 255, 0.326); */
+    border-bottom: 1px solid black;
+}
+.down-section .box .grid .elem i{
+    font-size: 25px;
+}
+/* .down-section .box .grid .elem .elems-box{
+    width: 50px;
+    height: 150vh;                                                                                                  ham is par box par witdth dekar set nhi kar pa rhe "i don't know".
+} */
+.down-section .box .grid .elem .elems-box img{
+    width: 70%;
+    object-fit: cover;
+    object-position: center;
+}
+.down-section .box .grid .elem h3{
+    font-weight: 500;
+}
+.down-section .box .grid .elem .qaont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 10vh;
+}
+
+.down-section .box .grid .elem .qaont .qaont-box{
+    border: 1px solid rgb(82, 81, 81);
+    padding: 8px 22px;
+    border-radius: 5px;
+}
+.down-footer{
+    width: 100%;
+    height: 20vh;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.down-footer .da-ri-fo-pen{
+    margin-left: 30px;
+}
+.down-footer .da-ri-fo-pen .da-ri-fo-up{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.down-footer .da-ri-fo-pen .da-ri-fo-up .debit-cards{
+    width: 67.4px;
+    height: 42.53px;
+    background-color: black;
+}
+.down-footer .da-ri-fo-pen .da-ri-fo-up .debit-cards:nth-child(1){
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://www.icicibank.com/content/dam/icicibank/icici-assets/personal-banking/coral-plus-card.png);
+    background-repeat: no-repeat;
+}
+.down-footer .da-ri-fo-pen .da-ri-fo-up .debit-cards:nth-child(2){
+    border-radius: 5px;
+    background-position: center;
+    background-size: 152%;
+    background-image: url(https://www.mastercard.co.in/content/dam/public/mastercardcom/sg/en/consumers/find-a-card/images/world-debit-card.png);
+    background-repeat: no-repeat;
+}
+.down-footer .da-ri-fo-pen .da-ri-fo-up .debit-cards:nth-child(3){
+    border-radius: 5px;
+    background-position: center;
+    background-size: 106%;
+    background-image: url(https://www.yesbank.in/content/published/api/v1.1/assets/CONT27CFDCA32AC74793844A6F6C284ECE01/native?cb=_cache_5966&channelToken=21f7ccfa2fc3401091938f541a6f8f2a);
+    background-repeat: no-repeat;
+}
+.down-footer .da-ri-fo-pen .da-ri-fo-up .debit-cards:nth-child(4){
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 117%;
+    background-image: url(https://www.ubagroup.com/57-marina/wp-content/uploads/sites/4/2021/06/UBA-Mastercard-Debit-Red.png);
+}
+.down-footer .da-ri-fo-pen .da-ri-fo-up i{
+    font-size: 30px;
+    color: gray;
+}
+.da-ri-fo-dn{
+    margin-top: 10px;
+}
+.da-la-fo-pe{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 30px;
+}
+.da-la-fo-pe .dn-fo-text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.da-la-fo-pe .dn-fo-text h2{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20PX;
+}
+.da-la-fo-pe .dn-fo-text h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20PX;
+}
+.dn-fo-btn button{
+    padding: 10px 22px;
+    background-color: rgb(0, 174, 255);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 20px 20px rgb(0, 174, 255);
+}
+
+
+@keyframes slide {
+    0%{
+        top: 100vh;
+    }
+    100%{
+        top: 0;
+    }
+}
+@keyframes revers {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 100vh;
+    }
+}
